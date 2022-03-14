@@ -1,0 +1,20 @@
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 768px){
+	html .conFiltros{
+		grid-template-columns: 25vw 75vw;
+		grid-template-rows: 10vh auto 10vh;
+		grid-template-areas: "header header" "aside main" "footer footer";
+	}
+	html .sinFiltros{
+		grid-template-columns: 100vw;
+		grid-template-rows: 10vh auto 10vh;
+		grid-template-areas: "header" "main" "footer";
+	}
+	header .main__menu{
+		flex-direction: row;
+	}
+
+	header .main__menu__list{
+		text-align: center;
+}

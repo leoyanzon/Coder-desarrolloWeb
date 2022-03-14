@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3DSTL Login</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media_queries.css">
+</head>
+<body class="sinFiltros">
+	<header>
+		<nav>
+			<a href="index.html">
+				<img src="img/3d-logo.png" alt="STL World Home" class="logo">
+			</a>
+			<ol class="main__menu">
+					<li><a href="explorar.html" class="main__menu__list">Explorar</a></li>
+					<li><a href="ranking.html" class="main__menu__list">Ranking</a></li>
+					<li><a href="login.html" class="main__menu__list">Log-in</a></li>
+			</ol>
+		</nav>
+	</header>
+
+	<!-- inicia contenido principal -->
+
+	<main>
+		<section>
+			<div>
+				<h1 class="titulosXXL">Contacto</h1>
+				<form action="envio.php" method="post"  class="main__form">
+					<fieldset class="fieldset">
+						<legend class="titulosM">Info de contacto</legend>
+						<label for="nombre" class="texto">Nombre y apellido:</label>
+						<input type="text" placeholder="Coloque su nombre aquí" name="nombre" id="nombre" class="fieldset__campos">
+						<br>
+						<label for="email" class="texto">Email:</label>
+						<input type="email" placeholder="Coloque su email aqui" name="email" id="email" class="fieldset__campos">
+					</fieldset>
+					<label for="mensaje" class="titulosM">Deja tu mensaje</label>
+					<br>
+					<textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deja tu mensaje aqui"></textarea>
+					<br>
+					<input type="submit" value="Enviar">
+					<input type="reset" value="Cancelar">
+				</form>
+			</div>
+
+		</section>		
+	</main>
+
+	<!--cierra main-->
+
+	<footer>
+		<div class="footer__block">
+			<div class = "footer__seguinos">
+				<h3 class="footer__texto">Seguinos en nuestras redes!</h3>
+			</div>
+			<div class = "footer__icons__grid">
+				<a href="https://facebook.com" target="_blank" class = "footer__icons">
+					<img src="img/facebook.png" alt="Seguinos en facebook" class="footer__logo">
+				</a>
+				<a href="https://instagram.com" target="_blank" class = "footer__icons">
+					<img src="img/instagram.png" alt="Seguinos en instagram" class="footer__logo">
+				</a>
+				<a href="https://twitter.com" target="_blank" class = "footer__icons">
+					<img src="img/twitter.png" alt="Seguinos en twitter" class="footer__logo" >
+				</a>
+			</div>
+		</div>
+		<div>
+			<a href="contacto.html" class="footer__menu">Contacto</a>
+		</div>
+	</footer>
+
+</body>
+</html>
