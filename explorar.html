@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- Required meta tags -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- Optional meta tags -->
 	<title>3DSTL Explorar</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media_queries.css">
+	<!--<link rel="stylesheet" href="css/media_queries.css">-->
+
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
-<body class="conFiltros">
+<body class="sinFiltros">
 	<header>
-		<nav>
+		<!-- <nav>
 			<a href="index.html">
 				<img src="img/3d-logo.png" alt="STL World Home" class="logo">
 			</a>
@@ -18,9 +29,51 @@
 					<li><a href="ranking.html" class="main__menu__list">Ranking</a></li>
 					<li><a href="login.html" class="main__menu__list">Log-in</a></li>
 			</ol>
+		</nav> -->
+
+		<!-- Inicio bootstrap navbar-->
+
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/3d-logo.png" alt="" class="logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="main__menu__list" aria-current="page" href="explorar.html">Explorar</a>
+						</li>
+
+						<li class="nav-item dropdown" >
+							<a class="main__menu__list dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Stats
+							</a>
+							<ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+								<li><a class="main__submenu__list" href="ranking.html">Ranking</a></li>
+								<li><a class="main__submenu__list" href="activity.html">Activity</a></li>
+							</ul>
+						</li>
+
+						<li class="nav-item">
+							<a class="main__menu__list" href="login.html">Login</a>
+						</li>
+					</ul>
+					<form class="d-flex">
+						<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Buscar</button>
+					</form>
+				</div>
+			</div>
 		</nav>
+
+		<!-- Fin bootstrap navbar -->
+
 	</header>
 	<main>
+		<!-- Anterior seccion
 		<section class="section">
 			<h1 class="titulosXXL">Explorar colecciones</h1>
 			<table cellpadding="5px" cellspacing="5px" class="explorarTable">
@@ -50,31 +103,64 @@
 					<td  class="texto">8.600ARS</td>
 				</tr>
 			</table>
-			
+			finaliza anterior seccion --> 
+
+		<section class="py-3 px-4">
+			<div class="container-fluid"></div>   
+			<h1 class="text-sm-center text-md-center text-lg-center fw-bold">Explorar</h1>
+			<div class="row">
+				<article class="col-sm-12 col-md-6 col-lg-3 pb-md-3">
+					<img src="img/Clover-VCT-Slideshow.webp" alt="" class="w-100">
+					<h2 class="text-center fs-3 fw-bold">Velas</h2>
+					<p class="fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit nostrum, ex, deserunt reiciendis ipsam debitis sapiente? Dicta aperiam aliquam, obcaecati debitis, quis commodi nam consequatur modi similique temporibus, officiis odit.</p>
+				</article>
+				<article class="col-sm-12 col-md-6 col-lg-3 pb-md-3">
+					<img src="img/insta1.webp" alt="" class="w-100">
+					<h2 class="text-center fs-3 fw-bold">Muñeco de nieve</h2>
+					<p class="fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit nostrum, ex, deserunt reiciendis ipsam debitis sapiente? Dicta aperiam aliquam, obcaecati debitis, quis commodi nam consequatur modi similique temporibus, officiis odit.</p>
+				</article>
+				<article class="col-sm-12 col-md-6 col-lg-3 pb-md-3">
+					<img src="img/Sequence-01_5.webp" alt="" class="w-100">
+					<h2 class="text-center fs-3 fw-bold">Cocodrilo</h2>
+					<p class="fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit nostrum, ex, deserunt reiciendis ipsam debitis sapiente? Dicta aperiam aliquam, obcaecati debitis, quis commodi nam consequatur modi similique temporibus, officiis odit.</p>
+				</article>
+				<article class="col-sm-12 col-md-6 col-lg-3 pb-md-3">
+					<img src="img/663197.webp" alt="" class="w-100">
+					<h2 class="text-center fs-3 fw-bold">Cubo loco</h2>
+					<p class="fs-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit nostrum, ex, deserunt reiciendis ipsam debitis sapiente? Dicta aperiam aliquam, obcaecati debitis, quis commodi nam consequatur modi similique temporibus, officiis odit.</p>
+				</article>
+			</div>
+
+		</section>			
 
 		<!-- ends form -->
-	
+
 		<!-- ends map -->
-		</section>		
-	</main>
+	</section>		
+</main>
 
-	<!--cierra main-->
+<!--cierra main-->
 
-	<aside>
-		<article>
-			<h1 class="titulosXL">FILTROS</h1>
-			<p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis nesciunt dignissimos ipsum vero culpa voluptate, odio, quo voluptates sequi. Aspernatur nemo animi ipsam culpa perspiciatis repellendus commodi molestias molestiae corrupti.</p>
-			<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Porro repellat pariatur mollitia a assumenda, soluta laudantium vitae beatae eos labore at fugit facilis illo quibusdam asperiores. Perspiciatis at aut delectus?</p>
-			<p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo facere rem vitae voluptatum molestias soluta atque quod impedit. Itaque pariatur ad qui voluptates quaerat nostrum quae amet cumque quibusdam magnam?</p>
-		</article>
-	</aside>
+<aside>
+	<article>
+		<h1 class="titulosXL">FILTROS</h1>
+		<p class="texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis nesciunt dignissimos ipsum vero culpa voluptate, odio, quo voluptates sequi. Aspernatur nemo animi ipsam culpa perspiciatis repellendus commodi molestias molestiae corrupti.</p>
+		<p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Porro repellat pariatur mollitia a assumenda, soluta laudantium vitae beatae eos labore at fugit facilis illo quibusdam asperiores. Perspiciatis at aut delectus?</p>
+		<p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo facere rem vitae voluptatum molestias soluta atque quod impedit. Itaque pariatur ad qui voluptates quaerat nostrum quae amet cumque quibusdam magnam?</p>
+	</article>
+</aside>
 
-	<footer>
-		<div class="footer__block">
-			<div class = "footer__seguinos">
-				<h3 class="footer__texto">Seguinos en nuestras redes!</h3>
-			</div>
-			<div class = "footer__icons__grid">
+<footer>
+	<div class="footer__block">
+		<div class = "footer__seguinos">
+			<h3 class="footer__texto">Seguinos en nuestras redes!</h3>
+		</div>
+		<div class = "footer__icons__grid">
+			<!-- Add font awesome icons -->
+			<a href="https://facebook.com" class="fa fa-facebook"></a>
+			<a href="https://instagram.com" class="fa fa-instagram"></a>
+			<a href="https://twitter.com" class="fa fa-twitter"></a>
+		<!--
 				<a href="https://facebook.com" target="_blank" class = "footer__icons">
 					<img src="img/facebook.png" alt="Seguinos en facebook" class="footer__logo">
 				</a>
@@ -84,11 +170,15 @@
 				<a href="https://twitter.com" target="_blank" class = "footer__icons">
 					<img src="img/twitter.png" alt="Seguinos en twitter" class="footer__logo" >
 				</a>
-			</div>
+			-->
 		</div>
-		<div class="footer__menu">
-			<a href="contacto.html" class="footer__contacto">Contacto</a>
-		</div>
-	</footer>
+	</div>
+	<div class="footer__menu">
+		<a href="contacto.html" class="footer__contacto">Contacto</a>
+	</div>
+</footer>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -28,7 +28,7 @@ html .conFiltros{
 	grid-template-areas: "header" "aside" "main" "footer";
 */
 	font-size: 2rem;
-	min-height: 100vh;
+	min-height: 85vh;
 
 }
 
@@ -44,7 +44,7 @@ html .sinFiltros{
 	grid-template-areas: "header" "main" "footer";
 */
 	font-size: 2rem;
-	min-height: 100vh;
+	min-height: 85vh;
 
 }
 
@@ -145,7 +145,7 @@ main{
 	overflow: hidden;
 	width: 100%;
 	justify-content: center;
-	min-height: 90vh;
+	min-height: 80vh;
 }
 
 main .section{
@@ -280,6 +280,7 @@ footer .footer__block{
 	display: flex;
 	flex-direction: column;
 	align-content: flex-start ;
+	padding: 0.5rem;
 
 	justify-content: space-between;
 	height: 100%;
@@ -289,6 +290,7 @@ footer .footer__seguinos{
 	display: flex;
 	height: 30%;
 	align-items: center;
+	align-self: center;
 }
 footer .footer__texto{
 	color: white;
@@ -335,10 +337,12 @@ footer div .footer__contacto:hover{
 
 .fa {
 	padding: 20px;
+	margin: 0 10px;
   font-size: 30px;
-  width: 50px;
+  width: 70px;
   text-align: left;
   text-decoration: none;
+  border-radius: 40%;
 }
 
 /* Add a hover effect if you want */
