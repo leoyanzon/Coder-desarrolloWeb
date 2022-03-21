@@ -17,4 +17,13 @@
 
 	header .main__menu__list{
 		text-align: center;
+
+	}	
+
+	footer{
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
+
+
