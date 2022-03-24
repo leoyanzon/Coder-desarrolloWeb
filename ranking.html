@@ -11,7 +11,7 @@
 	<!-- Optional meta tags -->
 	<title>3DSTL Ranking</title>
 	<link rel="stylesheet" href="css/style.css">
-	<!--<link rel="stylesheet" href="css/media_queries.css">-->
+	<link rel="stylesheet" href="css/media_queries.css">
 
 	<!-- Add icon library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -72,41 +72,44 @@
 
 	<!-- inicia contenido principal -->
 	<main>
-		<section class="section">
-				<h1 class="titulosXXL">Ranking</h1>
-				<table class="explorarTable">
-					<tr>
-						<th class="titulosM">Posicion</th>
-						<th class="titulosM">Descripción</th>
-						<th class="titulosM">Descargas</th>
-					</tr>
-					<tr>
-						<td class="texto">#1</td>
-						<td class="texto">Velas</td>
-						<td class="texto">2.600</td>
-					</tr>
-					<tr>
-						<td class="texto">#2</td>
-						<td class="texto">Muñeco de nieve</td>
-						<td class="texto">1.800</td>
-					</tr>
-					<tr>
-						<td class="texto">#3</td>
-						<td class="texto">Cocodrilo</td>
-						<td class="texto">1.000</td>
-					</tr>
-					<tr>
-						<td class="texto">#4</td>
-						<td class="texto">Cubo loco</td>
-						<td class="texto">600</td>
-					</tr>
-				</table>
-			
 
-		<!-- ends form -->
-	
-		<!-- ends map -->
-		</section>		
+		<div class="d-flex flex-column align-items-center">
+
+			<table class="table table-hover table-dark w-75">
+				<h1 class="titleXXL">Ranking</h1>
+				<h3 class="titulosM">Listado con los mas descargados</h3>
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Descripcion</th>
+						<th scope="col">Descargas</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td>Velas</td>
+						<td>2.600</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Muñeco de nieve</td>
+						<td>1.800</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Cocodrilo</td>
+						<td>1.000</td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td>Cubo loco</td>
+						<td>600</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
 	</main>
 
 	<!--cierra main-->
