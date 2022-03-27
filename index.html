@@ -10,26 +10,16 @@
 
 	<!-- Optional meta tags -->
 	<title>3DSTL Home</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media_queries.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!--<link rel="stylesheet" href="css/media_queries.css">-->
 
 	<!-- Add icon library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
-<body class="sinFiltros">
+<body>
 	<header>
-		<!-- <nav>
-			<a href="index.html">
-				<img src="img/3d-logo.png" alt="STL World Home" class="logo">
-			</a>
-			<ol class="main__menu">
-					<li><a href="explorar.html" class="main__menu__list">Explorar</a></li>
-					<li><a href="ranking.html" class="main__menu__list">Ranking</a></li>
-					<li><a href="login.html" class="main__menu__list">Log-in</a></li>
-			</ol>
-		</nav> -->
 
 		<!-- Inicio bootstrap navbar-->
 
@@ -44,21 +34,21 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="main__menu__list" aria-current="page" href="explorar.html">Explorar</a>
+							<a class="mainMenuList" aria-current="page" href="explorar.html">Explorar</a>
 						</li>
 
 						<li class="nav-item dropdown" >
-							<a class="main__menu__list dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<a class="mainMenuList dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								Stats
 							</a>
 							<ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
-								<li><a class="main__submenu__list" href="ranking.html">Ranking</a></li>
-								<li><a class="main__submenu__list" href="activity.html">Activity</a></li>
+								<li><a class="mainSubMenuList" href="ranking.html">Ranking</a></li>
+								<li><a class="mainSubMenuList" href="activity.html">Activity</a></li>
 							</ul>
 						</li>
 
 						<li class="nav-item">
-							<a class="main__menu__list" href="login.html">Login</a>
+							<a class="mainMenuList" href="login.html">Login</a>
 						</li>
 					</ul>
 					<form class="d-flex">
@@ -75,7 +65,7 @@
 	<main>
 		<!-- start slider -->
 
-		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+		<div id="carouselExampleIndicators" class="carousel slide w-100" data-bs-ride="carousel">
 			<div class="carousel-indicators">
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -121,30 +111,19 @@
 	</main>
 
 	<footer>
-		<div class="footer__block">
-			<div class = "footer__seguinos">
-				<h3 class="footer__texto">Seguinos en nuestras redes!</h3>
+		<div class="footerBlock">
+			<div class = "footerSeguinos">
+				<h3 class="footerTexto">Seguinos en nuestras redes!</h3>
 			</div>
-			<div class = "footer__icons__grid">
+			<div class = "footerIconsGrid">
 				<!-- Add font awesome icons -->
 				<a href="https://facebook.com" class="fa fa-facebook fa-2xs"></a>
 				<a href="https://instagram.com" class="fa fa-instagram fa-2xs"></a>
 				<a href="https://twitter.com" class="fa fa-twitter fa-2xs"></a>
-		<!--
-				<a href="https://facebook.com" target="_blank" class = "footer__icons">
-					<img src="img/facebook.png" alt="Seguinos en facebook" class="footer__logo">
-				</a>
-				<a href="https://instagram.com" target="_blank" class = "footer__icons">
-					<img src="img/instagram.png" alt="Seguinos en instagram" class="footer__logo">
-				</a>
-				<a href="https://twitter.com" target="_blank" class = "footer__icons">
-					<img src="img/twitter.png" alt="Seguinos en twitter" class="footer__logo" >
-				</a>
-			-->
 			</div>
 		</div>
-		<div class="footer__menu">
-			<a href="contacto.html" class="footer__contacto">Contacto</a>
+		<div class="footerMenu">
+			<a href="contacto.html" class="footerContacto">Contacto</a>
 		</div>
 	</footer>
 

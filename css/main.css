@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@300;400;900&family=Quintessential&family=Roboto:wght@300;700&family=Varela+Round&display=swap");
+* {
+  top: 0;
+  padding: 0;
+  margin: 0; }
+
+html body {
+  background-image: url(../img/background.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+@media screen and (max-width: 768px) {
+  .w-xs-25 {
+    width: 25%; }
+  .w-xs-50 {
+    width: 50%; }
+  .w-xs-75 {
+    width: 75%; }
+  .w-xs-100 {
+    width: 100%; } }
+
+@media screen and (max-width: 992px) {
+  .w-sm-25 {
+    width: 25%; }
+  .w-sm-50 {
+    width: 50%; }
+  .w-sm-75 {
+    width: 75%; }
+  .w-sm-100 {
+    width: 100%; } }
+
+@media screen and (max-width: 1200px) {
+  .w-md-25 {
+    width: 25%; }
+  .w-md-50 {
+    width: 50%; }
+  .w-md-75 {
+    width: 75%; }
+  .w-md-100 {
+    width: 100%; } }
+
+@media screen and (min-width: 1200px) {
+  .w-lg-25 {
+    width: 25%; }
+  .w-lg-50 {
+    width: 50%; }
+  .w-lg-75 {
+    width: 75%; }
+  .w-lg-100 {
+    width: 100%; } }
+
+@keyframes efectoLogo {
+  0% {
+    transform: scale(1); }
+  30% {
+    transform: scale(1.1); }
+  50% {
+    transform: scale(1.15); }
+  75% {
+    transform: scale(1.3); }
+  100% {
+    transform: scale(1.1); } }
+
+.titleXXL {
+  font-size: 2.2em;
+  padding: 10px;
+  text-transform: uppercase; }
+
+.titleXL {
+  font-size: 2em;
+  padding: 10px;
+  text-transform: uppercase; }
+
+.titleL {
+  font-size: 1.8em;
+  padding: 10px;
+  text-transform: uppercase; }
+
+.titleM {
+  font-size: 1.3em;
+  padding: 10px;
+  text-transform: uppercase; }
+
+.titleS {
+  font-size: 1em;
+  padding: 10px;
+  text-transform: uppercase; }
+
+.texto {
+  font-size: 1.3em;
+  padding: 15px; }
+
+header nav {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(220, 220, 220, 0.9));
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  header nav a {
+    display: flex;
+    align-items: center;
+    padding: 0.5em; }
+    header nav a .logo {
+      height: 60px; }
+      header nav a .logo:hover {
+        animation-name: efectoLogo;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 2s; }
+
+header .mainMenuList {
+  color: rgba(0, 0, 130, 0.8);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0 0.5em;
+  text-align: center;
+  transition: transform 0.5s, color 0.1s; }
+  header .mainMenuList:hover {
+    transform: scale(1.2);
+    color: rgba(0, 0, 80, 0.9); }
+
+header .mainSubMenuList {
+  display: flex;
+  justify-content: center;
+  color: rgba(0, 0, 130, 0.8);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  transition: transform 0.2s, color 0.1s; }
+  header .mainSubMenuList:hover {
+    transform: scale(1.1);
+    color: rgba(0, 0, 80, 0.9); }
+
+header .dropdown-menu {
+  background-color: transparent;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(220, 220, 220, 0.9)); }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(250, 250, 250, 0.8);
+  min-height: 82.5vh; }
+  main .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0; }
+  main article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; }
+
+#exploreGrid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "filterGrid" "mainGrid"; }
+
+#mainGrid {
+  grid-area: mainGrid; }
+
+#filterGrid {
+  grid-area: filterGrid;
+  height: 100%;
+  background-color: white;
+  color: black; }
+
+@media screen and (min-width: 1140px) {
+  #exploreGrid {
+    grid-template-columns: 25vw auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: "filterGrid mainGrid"; } }
+
+footer {
+  background-image: linear-gradient(to right, rgba(0, 0, 100, 0.6), rgba(0, 0, 100, 0.9));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 0.5em; }
+  footer .footerBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0.3em; }
+    footer .footerBlock .footerTexto {
+      color: white;
+      font-size: 1em; }
+    footer .footerBlock .footerIconsGrid {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      height: 40px; }
+  footer .footerMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0; }
+    footer .footerMenu .footerContacto {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: rgba(250, 250, 250, 0.7);
+      font-size: 1.8em;
+      font-weight: bold;
+      margin: 0.3em 1em;
+      transition: transform 0.5s; }
+      footer .footerMenu .footerContacto:hover {
+        transform: scale(1.2);
+        color: gainsboro; }
+
+.fa {
+  padding: 0.5em;
+  margin: 0 0.2em;
+  font-size: 5em;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px; }
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7; }
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white; }
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white; }
+
+.fa-instagram {
+  background: #125688;
+  color: white; }
+
+@media screen and (min-width: 768px) {
+  header .mainMenu {
+    flex-direction: row; }
+  header .mainMenuList {
+    text-align: center; }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 0.5em; } }

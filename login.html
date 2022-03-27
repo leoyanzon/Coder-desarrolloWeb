@@ -10,26 +10,15 @@
 
 	<!-- Optional meta tags -->
 	<title>3DSTL Login</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media_queries.css">
+	<link rel="stylesheet" href="css/main.css">
 
 	<!-- Add icon library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
-<body class="sinFiltros">
+<body>
 	<header>
-		<!-- <nav>
-			<a href="index.html">
-				<img src="img/3d-logo.png" alt="STL World Home" class="logo">
-			</a>
-			<ol class="main__menu">
-					<li><a href="explorar.html" class="main__menu__list">Explorar</a></li>
-					<li><a href="ranking.html" class="main__menu__list">Ranking</a></li>
-					<li><a href="login.html" class="main__menu__list">Log-in</a></li>
-			</ol>
-		</nav> -->
 
 		<!-- Inicio bootstrap navbar-->
 
@@ -44,21 +33,21 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="main__menu__list" aria-current="page" href="explorar.html">Explorar</a>
+							<a class="mainMenuList" aria-current="page" href="explorar.html">Explorar</a>
 						</li>
 
 						<li class="nav-item dropdown" >
-							<a class="main__menu__list dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<a class="mainMenuList dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								Stats
 							</a>
 							<ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
-								<li><a class="main__submenu__list" href="ranking.html">Ranking</a></li>
-								<li><a class="main__submenu__list" href="activity.html">Activity</a></li>
+								<li><a class="mainSubMenuList" href="ranking.html">Ranking</a></li>
+								<li><a class="mainSubMenuList" href="activity.html">Activity</a></li>
 							</ul>
 						</li>
 
 						<li class="nav-item">
-							<a class="main__menu__list" href="login.html">Login</a>
+							<a class="mainMenuList" href="login.html">Login</a>
 						</li>
 					</ul>
 					<form class="d-flex">
@@ -68,88 +57,63 @@
 				</div>
 			</div>
 		</nav>
+
+		<!-- Fin bootstrap navbar -->
+
 	</header>
 
 	<!-- inicia contenido principal -->
 
 	<main>
-		<section class="d-flex justify-content-center">
-			<div class="py-3 w-lg-50 w-md-100">
+		<section class="d-flex justify-content-center w-sm-100 w-md-75 w-lg-50">
+			<div class="py-3 w-100">
 				<h1 class="titleXXL">Log-in</h1>
 
-				<!-- old form
-				<form action="envio.php" method="post" class="main__form"> 
-					<fieldset class="fieldset">
-						<legend class="titulosM">Ingresar al sitio</legend>
-						<label for="user" class="texto">User:</label>
-						<input type="text" placeholder="Coloque su nombre de usuario aquí" name="user" id="user" class="fieldset__campos">
-						<br>
-						<label for="pass" class="texto">Password:</label>
-						<input type="Password" placeholder="Coloque su password aqui" name="pass" id="pass" class="fieldset__campos">
-					</fieldset>
-					<br>
-					<input type="submit" value="Enviar">
-					<input type="reset" value="Cancelar">
+				<form class="container-fluid">
+					<div class="mb-3 w-100 justify-content-center">
+						<label for="exampleInputEmail1" class="form-label">Email address</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+					</div>
+					<div class="mb-3 w-100">
+						<label for="exampleInputPassword1" class="form-label">Password</label>
+						<input type="password" class="form-control" id="exampleInputPassword1">
+					</div>
+					<div class="mb-3 form-check">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+						<label class="form-check-label" for="exampleCheck1">Check me out</label>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
 				</form>
+			</div>
 
-			-->
 
-			<form class="container-fluid">
-				<div class="mb-3 w-100 justify-content-center">
-					<label for="exampleInputEmail1" class="form-label">Email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-					<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-				</div>
-				<div class="mb-3 w-100">
-					<label for="exampleInputPassword1" class="form-label">Password</label>
-					<input type="password" class="form-control" id="exampleInputPassword1">
-				</div>
-				<div class="mb-3 form-check">
-					<input type="checkbox" class="form-check-input" id="exampleCheck1">
-					<label class="form-check-label" for="exampleCheck1">Check me out</label>
-				</div>
-				<button type="submit" class="btn btn-primary">Submit</button>
-			</form>
+			<!-- ends form -->
+			<div>
+
+			</div>
+			<!-- ends map -->
+		</section>		
+	</main>
+
+	<!--cierra main-->
+
+	<footer>
+		<div class="footerBlock">
+			<div class = "footerSeguinos">
+				<h3 class="footerTexto">Seguinos en nuestras redes!</h3>
+			</div>
+			<div class = "footerIconsGrid">
+				<!-- Add font awesome icons -->
+				<a href="https://facebook.com" class="fa fa-facebook fa-2xs"></a>
+				<a href="https://instagram.com" class="fa fa-instagram fa-2xs"></a>
+				<a href="https://twitter.com" class="fa fa-twitter fa-2xs"></a>
+			</div>
 		</div>
-
-
-		<!-- ends form -->
-		<div>
-
+		<div class="footerMenu">
+			<a href="contacto.html" class="footerContacto">Contacto</a>
 		</div>
-		<!-- ends map -->
-	</section>		
-</main>
-
-<!--cierra main-->
-
-<footer>
-	<div class="footer__block">
-		<div class = "footer__seguinos">
-			<h3 class="footer__texto">Seguinos en nuestras redes!</h3>
-		</div>
-		<div class = "footer__icons__grid">
-			<!-- Add font awesome icons -->
-			<a href="https://facebook.com" class="fa fa-facebook fa-2xs"></a>
-			<a href="https://instagram.com" class="fa fa-instagram fa-2xs"></a>
-			<a href="https://twitter.com" class="fa fa-twitter fa-2xs"></a>
-		<!--
-				<a href="https://facebook.com" target="_blank" class = "footer__icons">
-					<img src="img/facebook.png" alt="Seguinos en facebook" class="footer__logo">
-				</a>
-				<a href="https://instagram.com" target="_blank" class = "footer__icons">
-					<img src="img/instagram.png" alt="Seguinos en instagram" class="footer__logo">
-				</a>
-				<a href="https://twitter.com" target="_blank" class = "footer__icons">
-					<img src="img/twitter.png" alt="Seguinos en twitter" class="footer__logo" >
-				</a>
-			-->
-		</div>
-	</div>
-	<div class="footer__menu">
-		<a href="contacto.html" class="footer__contacto">Contacto</a>
-	</div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
