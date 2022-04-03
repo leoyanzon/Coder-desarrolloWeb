@@ -1,3 +1,9 @@
+# pass
+pass.txt
+
+# zip
+*.zip
+
 # Logs
 logs
 *.log

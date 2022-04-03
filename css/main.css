@@ -62,37 +62,42 @@ html body {
   100% {
     transform: scale(1.1); } }
 
+.link, header .mainMenuList, header .mainSubMenuList, footer .footerMenu .footerContacto {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold; }
+
 .titleXXL {
-  font-size: 2.2em;
-  padding: 10px;
-  text-transform: uppercase; }
-
-.titleXL {
-  font-size: 2em;
-  padding: 10px;
-  text-transform: uppercase; }
-
-.titleL {
   font-size: 1.8em;
   padding: 10px;
   text-transform: uppercase; }
 
-.titleM {
+.titleXL, h1 {
+  font-size: 1.6em;
+  padding: 10px;
+  text-transform: uppercase; }
+
+.titleL {
   font-size: 1.3em;
   padding: 10px;
   text-transform: uppercase; }
 
-.titleS {
+.titleM {
   font-size: 1em;
   padding: 10px;
   text-transform: uppercase; }
 
+.titleS {
+  font-size: 0.8em;
+  padding: 10px;
+  text-transform: uppercase; }
+
 .texto {
-  font-size: 1.3em;
+  font-size: 1em;
   padding: 15px; }
 
 header nav {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(220, 220, 220, 0.9));
+  background-image: linear-gradient(to right, rgba(0, 0, 100, 0.6), rgba(0, 0, 100, 0.9));
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -108,38 +113,38 @@ header nav {
         animation-iteration-count: infinite;
         animation-timing-function: ease-in;
         animation-duration: 2s; }
+  header nav .searchButton {
+    color: rgba(250, 250, 250, 0.7);
+    border-color: rgba(250, 250, 250, 0.7); }
+    header nav .searchButton:hover {
+      color: gainsboro;
+      border-color: gainsboro; }
 
 header .mainMenuList {
-  color: rgba(0, 0, 130, 0.8);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.8em;
-  font-weight: bold;
+  color: rgba(250, 250, 250, 0.7);
+  font-size: 1.3em;
   margin: 0 0.5em;
   text-align: center;
   transition: transform 0.5s, color 0.1s; }
   header .mainMenuList:hover {
     transform: scale(1.2);
-    color: rgba(0, 0, 80, 0.9); }
+    color: gainsboro; }
 
 header .mainSubMenuList {
   display: flex;
   justify-content: center;
-  color: rgba(0, 0, 130, 0.8);
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.3em;
-  font-weight: bold;
+  color: rgba(250, 250, 250, 0.7);
+  font-size: 1em;
   margin: 0;
   text-align: center;
   transition: transform 0.2s, color 0.1s; }
   header .mainSubMenuList:hover {
     transform: scale(1.1);
-    color: rgba(0, 0, 80, 0.9); }
+    color: gainsboro; }
 
 header .dropdown-menu {
   background-color: transparent;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(220, 220, 220, 0.9)); }
+  background-image: linear-gradient(to right, rgba(0, 0, 100, 0.6), rgba(0, 0, 100, 0.9)); }
 
 main {
   display: flex;
@@ -204,8 +209,8 @@ footer {
     margin: 0;
     padding: 0.3em; }
     footer .footerBlock .footerTexto {
-      color: white;
-      font-size: 1em; }
+      color: rgba(250, 250, 250, 0.7);
+      font-size: 0.8em; }
     footer .footerBlock .footerIconsGrid {
       display: flex;
       flex-direction: row;
@@ -222,11 +227,8 @@ footer {
     margin: 0;
     padding: 0; }
     footer .footerMenu .footerContacto {
-      text-decoration: none;
-      text-transform: uppercase;
       color: rgba(250, 250, 250, 0.7);
-      font-size: 1.8em;
-      font-weight: bold;
+      font-size: 1.3em;
       margin: 0.3em 1em;
       transition: transform 0.5s; }
       footer .footerMenu .footerContacto:hover {
@@ -257,6 +259,7 @@ footer {
   background: #55ACEE;
   color: white; }
 
+/* Instagram */
 .fa-instagram {
   background: #125688;
   color: white; }
