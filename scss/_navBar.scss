@@ -1,0 +1,123 @@
+header{
+	nav{
+		@if $mode == "dark" { 
+			background-image: map-get($darkMode, navBgColor);
+		} @else { 
+			background-image: map-get($lightMode, navBgColor);
+		}
+
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+		a{
+			display:flex;
+			align-items:center;
+			padding: 0.5em;
+			.logo{
+				height: 60px;
+
+				&:hover{
+					animation-name: efectoLogo;
+					animation-iteration-count: infinite;
+					animation-timing-function: ease-in;
+					animation-duration: 2s;
+				}
+			}
+		}
+
+		.searchButton{
+			@if $mode == "dark" {
+				color: map-get($darkMode, menuTextColor);
+				border-color: map-get($darkMode, menuTextColor);
+				&:hover{
+					color: map-get($darkMode, menuSelected);
+					border-color: map-get($darkMode, menuSelected);
+				}
+			} @else {
+				color: map-get($lightMode, menuTextColor);
+				border-color: map-get($lightMode, menuTextColor);
+				&:hover{
+					color: map-get($lightMode, menuSelected);
+					border-color: map-get($lightMode, menuSelected);
+				}
+			}
+		}
+
+		.burgerbutton{
+			@if $mode == "dark" {
+				background-color: map-get($darkMode, burgerBtnBg);
+			} @else {
+				background-color: map-get($lightMode, burgerBtnBg);
+			}
+		}
+
+	}
+
+	.mainMenuList{
+		@if $mode == "dark" { 
+			color: map-get($darkMode, menuTextColor);
+		} @else { 
+			color: map-get($lightMode, menuTextColor);
+		}
+		@extend .link;
+		font-size: $textL;
+		margin: 0 0.5em;
+		text-align: center;
+		transition: transform 0.5s, color 0.1s;
+
+		&:hover{
+			@if $mode == "dark" { 
+				color: map-get($darkMode, menuSelected);
+			} @else { 
+				color: map-get($lightMode, menuSelected);
+			}
+		}
+	}	
+
+
+	.mainSubMenuList{
+		display: flex;
+		justify-content: center;
+		@if $mode == "dark" { 
+			color: map-get($darkMode, menuTextColor);
+		} @else { 
+			color: map-get($lightMode, menuTextColor);
+		}
+		@extend .link;
+		font-size: $textM;
+		margin: 0;
+		text-align: center;
+		transition: transform 0.2s, color 0.1s;
+
+		&:hover{
+			transform: scale(1.05);
+			@if $mode == "dark" { 
+				color: map-get($darkMode, menuSelected);
+			} @else { 
+				color: map-get($lightMode, menuSelected);
+			}
+		}
+	}
+
+	.dropdown-menu{
+		background-color: transparent;
+		@if $mode == "dark" { 
+			background-image: map-get($darkMode, navBgColor);
+		} @else { 
+			background-image: map-get($lightMode, navBgColor);
+		}
+	}
+}
+
+//navBar media screen
+@media screen and (min-width: 992px){
+
+	header .mainMenuList{
+		font-size: $textL;
+		&:hover{
+			transform: scale(1.2);
+		}
+	}
+}

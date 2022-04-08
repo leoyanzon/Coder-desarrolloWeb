@@ -1,0 +1,51 @@
+//Main properties
+main{
+	@include flex(column, center, center, 0, 0);
+	@if $mode == "dark" { 
+		background-color: map-get($darkMode, mainBgColor);
+		color: map-get($darkMode, mainTextColor);
+	} @else { 
+		background-color: map-get($lightMode, mainBgColor);
+		color: map-get($lightMode, mainTextColor);
+	}
+	min-height: 83.1vh;
+
+	.section{
+		@include flex(column, center, center, 0, 0);
+	}
+
+	article{
+		@include flex(column, center, center, 0, 0);
+		flex-wrap: wrap;
+	}
+}
+
+#exploreGrid{
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto;
+	grid-template-areas: "filterGrid" "mainGrid";
+
+}
+
+#mainGrid{
+	grid-area: mainGrid;
+}
+
+#filterGrid{
+	grid-area: filterGrid;
+	height: 100%;
+		background-color: white;
+		color: black;
+}
+
+//Media screen for main
+@media screen and (min-width: 1140px){
+
+	#exploreGrid{
+		grid-template-columns: 25vw auto;
+		grid-template-rows: 1fr;
+		grid-template-areas: "filterGrid mainGrid";
+	}
+
+}

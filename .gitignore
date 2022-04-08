@@ -48,7 +48,7 @@ node_modules/
 jspm_packages/
 
 # Sas directories
-scss/
+
 
 # TypeScript v1 declaration files
 typings/
