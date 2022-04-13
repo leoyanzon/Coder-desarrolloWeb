@@ -36,7 +36,7 @@ $lightMode:(
 
 // Sizing extensions for bootstrap propias
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 0x) { //from 0px to infinite
 	.w-xs-25{
 		width: 25%;
 	}
@@ -51,7 +51,7 @@ $lightMode:(
 	}
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 768px) { //from 768 to infinite
 	.w-sm-25{
 		width: 25%;
 	}
@@ -66,7 +66,7 @@ $lightMode:(
 	}
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 992px) { //from 992 to infinite
 	.w-md-25{
 		width: 25%;
 	}
@@ -81,7 +81,7 @@ $lightMode:(
 	}
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) { //from 1200 to infinite
 	.w-lg-25{
 		width: 25%;
 	}

@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@300;400;900&family=Quintessential&family=Roboto:wght@300;700&family=Varela+Round&display=swap');
 
 $fontMainTitle: 'Nunito', sans-serif;
-$fontMainText: 'Lobster', cursive;
-$fontSecondary: 'Roboto', sans-serif;
+$fontSecondary: 'Lobster', sans-serif;
+$fontMainText: 'Roboto', sans-serif;
 
 
 //Variables para textos
 $textXXL: 1.8em;
 $textXL: 1.6em;
 $textL: 1.3em;
-$textM: 1em;
+$textM: 1.1em;
 $textS: 0.8em;
 $textXS: 0.5em;
 
@@ -22,7 +22,17 @@ $textXS: 0.5em;
 
 //Semanticas
 h1{
+	@extend .titleXXL;
+	text-align:center;
+	background-color: rgba($color: black, $alpha: 0.15);
+	width: 100%;
+}
+
+h2{
 	@extend .titleXL;
+	text-align: center;
+	background-color: rgba($color: black, $alpha: 0.1);
+	width: 100%;
 }
 
 
@@ -30,33 +40,42 @@ h1{
 
 .titleXXL{
 	font-size: $textXXL;
-	padding: 10px;
+	padding: 1em;
 	text-transform: uppercase;
+	font-weight: bold;
+	font-family: $fontMainTitle;
 }
 
 .titleXL{
 	font-size: $textXL;
-	padding: 10px;
+	padding: 0.9em;
 	text-transform: uppercase;
+	font-weight: bold;
+	font-family: $fontMainTitle;
 }
 
 .titleL{
 	font-size: $textL;
-	padding: 10px;
+	padding: 0.85em;
 	text-transform: uppercase;
+	font-weight: bold;
+	font-family: $fontMainTitle;
 }
 .titleM{
 	font-size: $textM;
-	padding: 10px;
+	padding: 0.8em;
 	text-transform: uppercase;
+	font-family: $fontMainTitle;
 }
 .titleS{
 	font-size: $textS;
-	padding: 10px;
+	padding: 0.7em;
 	text-transform: uppercase;
+	font-family: $fontMainTitle;
 }
 
 .texto{
+	font-family: $fontMainText;
 	font-size: $textM;
-	padding: 15px;
+	padding: 0.3em;
 }

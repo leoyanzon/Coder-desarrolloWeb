@@ -1,6 +1,6 @@
 //Main properties
 main{
-	@include flex(column, center, center, 0, 0);
+	//@include flex(column, center, center, 0, 0);
 	@if $mode == "dark" { 
 		background-color: map-get($darkMode, mainBgColor);
 		color: map-get($darkMode, mainTextColor);
@@ -8,6 +8,7 @@ main{
 		background-color: map-get($lightMode, mainBgColor);
 		color: map-get($lightMode, mainTextColor);
 	}
+	
 	min-height: 83.1vh;
 
 	.section{
@@ -18,6 +19,31 @@ main{
 		@include flex(column, center, center, 0, 0);
 		flex-wrap: wrap;
 	}
+	
+	.mainArticle{
+		width: 90vw;
+		@include flex(row, flex-start, center, 0.5em, 0.5em);
+	}
+
+	.mainArticleImg{
+		width: 30%;
+		.mainArticleImgIcon{
+			width: 60px;
+			&:hover{
+				transform: scale(1.2);
+			}
+		}
+	}
+
+	.mainArticleTxt{
+		width: 70%;
+	}
+
+	.error404Img{
+		width:80vw;
+		height: auto;
+	}
+
 }
 
 #exploreGrid{
@@ -33,6 +59,8 @@ main{
 }
 
 #filterGrid{
+	display:flex;
+	flex-direction: column;
 	grid-area: filterGrid;
 	height: 100%;
 		background-color: white;
@@ -47,5 +75,17 @@ main{
 		grid-template-rows: 1fr;
 		grid-template-areas: "filterGrid mainGrid";
 	}
+
+	main{
+		.mainArticle{
+			width: 60vw;
+		}	
+
+		.error404Img{
+			width:50vw;
+			height: auto;
+		}	
+	}
+	
 
 }
